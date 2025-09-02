@@ -46,23 +46,34 @@
             </div>
         </header>
 
+        <!-- === Navigation === (This section is now removed and integrated into the header) -->
+        <!-- 
+        <nav class="flex justify-center gap-x-8 my-8">
+            <a href="index.html" class="nav-link active">이력서</a>
+            <a href="career.html" class="nav-link">상세 경력 기술서</a>
+            <span class="nav-link text-gray-400 cursor-not-allowed">포트폴리오 (준비중)</span>
+        </nav>
+        -->
+
         <main class="mt-10">
+            <!-- === 핵심 역량 === -->
             <section id="summary" class="mb-10">
                 <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-4">핵심 역량</h3>
                 <p class="text-gray-700 leading-relaxed">
                     IDC에서 근무를 하며 수백 대 규모의 리눅스/윈도우 서버를 설계, 구축, 운영하며 다져온 안정적인 시스템 운영 역량을 바탕으로 인프라 전문가로 성장하고자 합니다.<br> 
                     로그 분석 기반의 신속한 장애 해결 능력과 셸 스크립트를 활용한 자동화 경험을 통해 인프라의 가용성과 효율성을 극대화했으며, 서비스 응답 속도를 향상시키는 등 성능 최적화 경험을 보유하고 있습니다.<br>
-                    탄탄한 기본기를 바탕으로 Kubernetes, Docker 등 최신 기술을 빠르게 습득하여 서비스의 안정적인 기반을 책임지는 엔지니어가 되는 것이 목표입니다.
-                </p>
+                    탄탄한 기본기를 바탕으로 Kubernetes, Docker 등 최신 기술을 빠르게 습득하여 서비스의 안정적인 기반을 책임지는 엔지니어가 되는 것이 목표입니다.                </p>
             </section>
 
-            <!-- Work Experience Section -->
+            <!-- === 주요 경력 === -->
             <section id="experience" class="mb-10">
                 <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">주요 경력</h3>
-                <div id="experience-details" class="space-y-8">
+                <div id="experience-container" class="space-y-8">
+                    <!-- 경력 사항이 여기에 동적으로 추가됩니다. -->
                 </div>
             </section>
 
+            <!-- === 학력 사항 === -->
             <section id="education" class="mb-10">
                 <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">학력 사항</h3>
                 <div class="space-y-4">
@@ -77,57 +88,43 @@
                 </div>
             </section>
 
-            <section id="skills">
+            <!-- === 보유 기술 === -->
+            <section id="skills" class="mb-10">
                 <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">보유 기술</h3>
                 <div class="space-y-6">
                     <div>
                         <h4 class="text-lg font-semibold text-gray-700">OS & Virtualization</h4>
-                        <p class="text-gray-600 mt-2">Linux (CentOS, Ubuntu, RedHat), Windows Server, Virtualization(EXSI, XEN)</p>
+                        <p class="text-gray-600 mt-2">Linux (CentOS, Ubuntu, RedHat), Windows Server, VMware ESXi, Xen</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-700">Container & Automation</h4>
+                         <p class="text-gray-600 mt-2">Docker, Kubernetes, Shell Script</p>
                     </div>
                     <div>
                         <h4 class="text-lg font-semibold text-gray-700">WEB/WAS & Database</h4>
                         <p class="text-gray-600 mt-2">Apache, Nginx, Tomcat, WebtoB, Jeus, MySQL, MariaDB</p>
                     </div>
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-700">Automation & Monitoring</h4>
-                        <p class="text-gray-600 mt-2">Shell Script, Zabbix, Prometheus</p>
-                    </div>
-                    <div>
                         <h4 class="text-lg font-semibold text-gray-700">Network & Security</h4>
                         <p class="text-gray-600 mt-2">Firewall(Axgate, Fortigate), SSL Certificates, Load Balancing</p>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold text-yellow-700">Infra Readiness</h4>
-                        <p class="text-gray-600 mt-2">Python, Docker, Kubernetes, Ansible, GPU Server Management</p>
-                    </div>
                 </div>
+            </section>
 
-            <!-- Certifications Section -->
-            <section id="certifications" class="mb-10">
+            <!-- === 보유 자격증 === -->
+            <section id="certifications">
                 <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">보유 자격증</h3>
                 <div class="space-y-4">
                     <div>
                         <p class="text-md font-semibold text-gray-800">CKA (Certified Kubernetes Administrator)</p>
-                        <p class="text-sm text-gray-500 mt-1">2024년 3월 취득</p>
+                        <p class="text-sm text-gray-500 mt-1">2024.03 취득</p>
                     </div>
                 </div>
-            </section>
-    
-            <!-- Education Section -->
-            <section id="education">
-                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-2 mb-6">교육 및 수료</h3>
-                <div class="space-y-4">
-                    <div>
-                         <p class="text-md font-semibold text-gray-800">ISTQB (International Software Testing Qualifications Board) Foundation Level</p>
-                         <p class="text-sm text-gray-500 mt-1">2025년 8월 19일 ~ 2025년 8월 21일 수료</p>
-                    </div>
-                </div>
-
             </section>
         </main>
     </div>
 
-   <script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const experienceData = [
                 {
